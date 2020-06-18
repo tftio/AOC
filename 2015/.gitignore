@@ -1,0 +1,7 @@
+*.input
+*.dump
+*.cmi
+*.cmo
+*.cmx
+*.o
+_build/

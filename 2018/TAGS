@@ -1,0 +1,189 @@
+
+./Setup.hs,15
+main main1,2
+
+./app/Main.hs,37
+module Main Main0,1
+main main4,5
+
+./test/Spec.hs,15
+main main0,1
+
+./src/Day06.hs,377
+module Day06 Day060,1
+type Point Point6,7
+type Box Box7,8
+testData testData9,10
+testSolution testSolution10,11
+getData getData12,13
+buildBox buildBox17,18
+pointsFromBox pointsFromBox26,27
+sortDistances sortDistances34,35
+dropOutsidePoints dropOutsidePoints37,38
+manhattanDistance manhattanDistance42,43
+solve01 solve0148,49
+solution01 solution0173,74
+
+./src/Day02.hs,273
+module Day02 Day020,1
+hasNLetters hasNLetters3,4
+checksum checksum6,7
+differs differs9,10
+common common18,19
+testInput1 testInput125,26
+testInput2 testInput226,27
+solve1 solve128,29
+solve2 solve229,30
+solution1 solution131,32
+solution2 solution235,36
+
+./src/Day12.hs,372
+module Day12 Day122,3
+testInput testInput8,9
+day01Input day01Input10,11
+type Pot Pot12,13
+type State State13,14
+type Rule Rule14,15
+type Store Store16,17
+parseInput parseInput18,19
+visualizeStates visualizeStates26,27
+chunkState chunkState36,37
+simulate simulate53,54
+(s(s,r)65,66
+go go66,67
+cycleLength cycleLength71,72
+solve02 solve0279,80
+
+./src/Day03.hs,404
+module Day03 Day030,1
+type Point Point5,6
+type Size Size6,7
+type Square Square7,8
+type Points Points8,9
+pointsFromSquare pointsFromSquare10,11
+parseInput parseInput14,15
+squareIntersects squareIntersects20,21
+testData testData24,25
+squares squares26,27
+createMap createMap27,28
+solution01 solution0129,30
+solution02 solution0230,31
+solve01 solve0135,36
+solve02 solve0239,40
+
+./src/Day13.hs,49
+module Day13 Day132,3
+testInput testInput4,5
+
+./src/Day08.hs,318
+module Day08 Day080,1
+testData testData2,3
+testSolution testSolution3,4
+getData getData5,6
+data Node Node8,9
+data Node = Node Node8,9
+data Node = Node [Int] [Node] | Empty Empty8,9
+data Header Header9,10
+data Header = Header Header9,10
+headerFromList headerFromList11,12
+buildTree buildTree15,16
+
+./src/Day09.hs,601
+module Day09 Day090,1
+type Board Board4,5
+type Score Score5,6
+type Marble Marble6,7
+type Player Player7,8
+data Game Game9,10
+data Game = Game Game9,10
+data Game = Game { playerScores playerScores9,10
+data Game = Game { playerScores :: V.Vector Int, board board9,10
+solve solve11,12
+parseInput parseInput14,15
+rotate rotate20,21
+emptyGame emptyGame27,28
+addMarble addMarble29,30
+addMarble m b | (m `mod`mod30,31
+playTurn playTurn36,37
+playGame playGame46,47
+highScore highScore50,51
+testData testData53,54
+part01Data part01Data54,55
+solution01 solution0155,56
+
+./src/Day10.hs,598
+module Day10 Day102,3
+type Point Point6,7
+type Velocity Velocity7,8
+type Pt Pt8,9
+data TimeV TimeV10,11
+data TimeV = Forward Forward10,11
+data TimeV = Forward | Backwards Backwards10,11
+lineToPt lineToPt12,13
+pointOfPt pointOfPt18,19
+velocityOfPt velocityOfPt21,22
+updatePoint updatePoint24,25
+incrementPt incrementPt32,33
+decrementPt decrementPt35,36
+boxDimensionFromPts boxDimensionFromPts38,39
+boxSize boxSize49,50
+findWord findWord52,53
+paintPoints paintPoints56,57
+testData testData74,75
+parseData parseData76,77
+solve solve78,79
+solve01 solve0180,81
+
+./src/Day04.hs,923
+module Day04 Day041,2
+type Minute Minute7,8
+type AsleepRecord AsleepRecord8,9
+data Guard Guard10,11
+data Guard      = Guard Guard10,11
+data Guard      = Guard Int       | Previous Previous10,11
+data LineState LineState11,12
+data LineState  = NewGuard NewGuard11,12
+data LineState  = NewGuard Minute | GoesToSleep GoesToSleep11,12
+data LineState  = NewGuard Minute | GoesToSleep Minute | WakesUp WakesUp11,12
+pad pad13,14
+extractAsleepRange extractAsleepRange17,18
+addAsleepRange addAsleepRange23,24
+combineAsleepRanges combineAsleepRanges26,27
+parseLine parseLine29,30
+extractSleepRanges extractSleepRanges37,38
+toSleepyMap toSleepyMap45,46
+getSleepiestGuard getSleepiestGuard48,49
+getMaxMinuteForGuard getMaxMinuteForGuard51,52
+createMap createMap55,56
+solve01 solve0157,58
+solve02 solve0263,64
+testData testData67,68
+solution01 solution0169,70
+solution02 solution0273,74
+
+./src/Day05.hs,242
+module Day05 Day050,1
+testData testData3,4
+areReactive areReactive5,6
+reducePolymer reducePolymer8,9
+removeUnit removeUnit14,15
+solve02 solve0216,17
+solve01 solve0118,19
+solution01 solution0119,20
+solution02 solution0223,24
+
+./src/Day01.hs,116
+module Day01 Day013,4
+reader reader7,8
+answerOne answerOne11,12
+answerTwo answerTwo14,15
+input input28,29
+
+./src/Day11.hs,174
+module Day11 Day112,3
+serial serial5,6
+powerLevel powerLevel7,8
+powerSquare powerSquare13,14
+comparePower comparePower15,16
+best best17,18
+solve02 solve0224,25

@@ -1,0 +1,4 @@
+.stack-work/
+AOC2018.cabal
+*~
+*.lock

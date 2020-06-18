@@ -1,0 +1,39 @@
+name:                advent-of-code
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            https://github.com/tftio/advent-of-code#readme
+license:             PublicDomain
+license-file:        LICENSE
+author:              James Felix Black
+maintainer:          tftio@icloud.com
+copyright:           PublicDomain
+category:            Pedagogy
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Day01, Day02, Day03, Day04, Day05, Day06, Day07, Day08
+  build-depends:       base >= 4.7 && < 5, split, pureMD5, bytestring, text, containers
+  default-language:    Haskell2010
+
+executable advent-of-code
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base, advent-of-code
+  default-language:    Haskell2010
+
+test-suite advent-of-code-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base, advent-of-code
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/tftio/advent-of-code
