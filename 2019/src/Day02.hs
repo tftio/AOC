@@ -22,12 +22,6 @@ process rs =
           2  -> aux (registers V.// [(sp, valueA * valueB)]) (ip + 4)
           _  -> error "invalid opcode"
 
-solve01 :: IO ()
-solve01 = do
-  i <- readFile "data/Day02.txt"
-  let rs = process (V.fromList (parseInput i) V.// [(1, 12), (2, 2)])
-  print (rs V.! 0)
-
 part02 :: [Int] -> Int -> Int
 part02 registers target =
   aux registers [(n, v) | n <- [0..99], v <- [0..99]]
@@ -43,6 +37,12 @@ part02 registers target =
           else
             aux rs ps
         
+solve01 :: IO ()
+solve01 = do
+  i <- readFile "data/Day02.txt"
+  let rs = process (V.fromList (parseInput i) V.// [(1, 12), (2, 2)])
+  print (rs V.! 0)
+
 solve02 :: IO ()
 solve02 = do
   i <- readFile "data/Day02.txt"
