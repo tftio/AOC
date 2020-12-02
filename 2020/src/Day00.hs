@@ -19,6 +19,14 @@ computeAnswer :: String -> Int
 computeAnswer =
   sum . map (fuel . stringToMass) . lines
 
+newFuel :: Int -> Int
+newFuel = id
+
+helper :: Int -> Int -> Int
+helper mass runningTotal | fuel mass <= 0 = runningTotal
+helper mass runningTotal | otherwise      =
+  helper (fuel mass) (runningTotal + fuel mass)
+  
 part01 :: IO ()
 part01 = do
   raw <- readFile "data/Day00.txt"

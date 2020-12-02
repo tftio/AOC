@@ -27,6 +27,8 @@ library
   exposed-modules:
       AOC
       Day00
+      Day01
+      Day02
       Lib
   other-modules:
       Paths_AOC2020
@@ -34,6 +36,8 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , containers
+    , split
   default-language: Haskell2010
 
 executable AOC2020-exe
@@ -46,6 +50,8 @@ executable AOC2020-exe
   build-depends:
       AOC2020
     , base >=4.7 && <5
+    , containers
+    , split
   default-language: Haskell2010
 
 test-suite AOC2020-test
@@ -59,4 +65,6 @@ test-suite AOC2020-test
   build-depends:
       AOC2020
     , base >=4.7 && <5
+    , containers
+    , split
   default-language: Haskell2010
