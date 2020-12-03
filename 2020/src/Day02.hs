@@ -12,15 +12,14 @@ type Result = (Policy, Password)
 testString = "1-3 a: abcde\n1-3 b: cdefg\n2-9 c: ccccccccc"
 testData   = (map parseInput . lines) testString
 
--- parseInput :: String -> [(Policy, Password)]
+parseInput :: String -> Result
 parseInput s = (Policy c min max, password)
   where [min,max]  = getMinMax part1
-        c          = getChar   part2
+        c          = head      part2
         password   = getPwd    part3
 
         [part1,part2,part3] = splitOn " " s
         getMinMax = map read . splitOn "-"
-        getChar = head 
         getPwd = id
 
 testPassword01 :: Result -> Bool

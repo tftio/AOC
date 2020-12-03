@@ -29,6 +29,7 @@ library
       Day00
       Day01
       Day02
+      Day03
       Lib
   other-modules:
       Paths_AOC2020
