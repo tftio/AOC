@@ -2,13 +2,15 @@
 
 module Day01 where
 
+
 fuel :: Int -> Int
-fuel m = if v > 0 then v else 0
-  where
-    v = (floor . (/ 3.0) . fromIntegral $  m) - 2
+fuel = subtract 2 . floor . (/ 3.0) . fromIntegral
 
 doInt :: [Char] -> Int
 doInt s = read s :: Int
+
+stringToFuel :: [Char] -> Int
+stringToFuel s = read s :: Int
 
 solve01 :: IO ()
 solve01 = do
