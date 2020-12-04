@@ -1,8 +1,8 @@
 {-# LANGUAGE FlexibleContexts #-}
 module Day04 where
 
-import Data.List.Split
-import Text.Read
+import Data.List.Split (splitOn)
+import Text.Read (readMaybe)
 import Text.Regex.TDFA 
 
 testStr :: String
