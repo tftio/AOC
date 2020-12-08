@@ -13,7 +13,6 @@ data Instruction = NOP Int | JMP Int | ACC Int deriving (Show, Eq)
 data Result = Cycle Int | Termination Int deriving (Show, Eq)
 type Program = Vector Instruction
 
-
 parseStr :: String -> Program
 parseStr = V.fromList . map parseLine . lines
   where
@@ -44,10 +43,14 @@ part01 :: Program -> Result
 part01 = run
 
 part02 :: Program -> Result
-part02 program = head . filter isOk . map run . zipWith (\idx istr -> program // [(idx, switch istr)]) [0..] . V.toList $ program 
+part02 program = head .
+                 filter isOk .
+                 map run .
+                 zipWith (\idx istr -> program // [(idx, switch istr)]) [0..] .
+                 V.toList $ program 
   where
     isOk (Termination _) = True
-    isOk _             = False
+    isOk _               = False
     switch (NOP i) = JMP i
     switch (JMP i) = NOP i
     switch i       = i 
