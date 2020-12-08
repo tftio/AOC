@@ -8,8 +8,8 @@ testData = "abc\n\na\nb\nc\n\nab\nac\n\na\na\na\na\n\nb"
 parseData :: [Char] -> [[S.Set Char]]
 parseData = map (map S.fromList . lines) . splitOn "\n\n"
 
-solve :: ([S.Set Char] -> S.Set Char) -> Int
-solve f = sum . map (S.size . f) 
+solve :: ([S.Set Char] -> S.Set Char) -> [[S.Set Char]] -> Int
+solve f = sum . map (S.size . f)
 
 part01 :: [S.Set Char] -> S.Set Char 
 part01 = foldr S.union S.empty
