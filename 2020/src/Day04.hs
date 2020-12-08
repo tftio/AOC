@@ -19,10 +19,10 @@ parseInput = map words . splitOn "\n\n"
 
 isValidPassport :: (String -> Bool) -> [String] -> Bool
 isValidPassport vf p =
-  all (\f -> f p) fs && all vf p
+  all (\f -> f p) fs
   where
     fs = map hasA ["byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid"]
-    hasA s = (== 1) . length . filter (\p -> take 3 p == s)
+    hasA s = (== 1) . length . filter (\pr -> (take 3 pr == s) && vf pr)
 
 validateField :: String -> Bool
 validateField p =

@@ -31,6 +31,10 @@ library
       Day02
       Day03
       Day04
+      Day05
+      Day06
+      Day07
+      Day08
       Lib
   other-modules:
       Paths_AOC2020
@@ -39,7 +43,10 @@ library
   build-depends:
       base >=4.7 && <5
     , containers
+    , hashmap
+    , raw-strings-qq
     , regex-tdfa
+    , sort
     , split
   default-language: Haskell2010
 
@@ -54,7 +61,10 @@ executable AOC2020-exe
       AOC2020
     , base >=4.7 && <5
     , containers
+    , hashmap
+    , raw-strings-qq
     , regex-tdfa
+    , sort
     , split
   default-language: Haskell2010
 
@@ -70,6 +80,9 @@ test-suite AOC2020-test
       AOC2020
     , base >=4.7 && <5
     , containers
+    , hashmap
+    , raw-strings-qq
     , regex-tdfa
+    , sort
     , split
   default-language: Haskell2010

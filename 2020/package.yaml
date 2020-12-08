@@ -24,8 +24,9 @@ dependencies:
 - containers
 - split
 - regex-tdfa
-
-
+- sort
+- raw-strings-qq
+- hashmap
 library:
   source-dirs: src
 
