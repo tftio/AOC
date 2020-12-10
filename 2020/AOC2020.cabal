@@ -35,6 +35,7 @@ library
       Day06
       Day07
       Day08
+      Day09
       Lib
   other-modules:
       Paths_AOC2020

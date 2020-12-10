@@ -1,17 +1,17 @@
 module Day08 where
 
-import Data.Vector (Vector, (!), (!?), (//))
+import Data.Vector (Vector, (!), (//))
 import qualified Data.Vector as V
+
+data Instruction = NOP Int | JMP Int | ACC Int deriving (Show, Eq)
+data Result = Cycle Int | Termination Int deriving (Show, Eq)
+type Program = Vector Instruction
 
 testStr :: String
 testStr = "nop +0\nacc +1\njmp +4\nacc +3\njmp -3\nacc -99\nacc +1\njmp -4\nacc +6"
 
 testData :: Program
 testData = parseStr testStr
-
-data Instruction = NOP Int | JMP Int | ACC Int deriving (Show, Eq)
-data Result = Cycle Int | Termination Int deriving (Show, Eq)
-type Program = Vector Instruction
 
 parseStr :: String -> Program
 parseStr = V.fromList . map parseLine . lines
