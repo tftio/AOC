@@ -4,11 +4,6 @@ module Day10 where
 import Data.Sort (sort)
 import Data.List (subsequences)
 
-testStr = "16\n10\n15\n5\n1\n11\n7\n19\n6\n12\n4"
-testData = parseInput testStr
-
-testStr2 = "28\n33\n18\n42\n31\n14\n46\n20\n48\n47\n24\n23\n49\n45\n19\n38\n39\n11\n1\n32\n25\n35\n8\n17\n7\n9\n4\n2\n34\n10\n3"
-
 parseInput :: String -> [Int]
 parseInput = sort . map read . lines
 
@@ -29,9 +24,6 @@ solve01 jolts = a * b
 
 isLegalInterval :: [Int] -> Bool
 isLegalInterval ls = (== length ls - 1) . length . filter (<= 3) $ zipWith (\a b -> abs (a - b)) ls (tail ls)
-      
-test :: [Int]
-test = reverse [144,143,142,141,140]
 
 findValidIntervals :: Int -> Int -> [Int] -> [[Int]]
 findValidIntervals f l ls =
@@ -56,15 +48,6 @@ solve02 ints =
                       3 + last (chunks !! idx)
     getLastFrom idx =
       head (chunks !! (idx + 1)) 
-      
-          
-      
-  
-      
-      
-  
-
-testData2 = parseInput $ testStr2
 
 splitIntoIntervals :: [Int] -> [[Int]]
 splitIntoIntervals ints =
@@ -79,7 +62,6 @@ splitIntoIntervals ints =
         go i' [] (acc ++ [sub ++ [i]]) is
       else
         go i' (sub ++ [i]) acc is
-
 
 solution :: IO ()
 solution = do
