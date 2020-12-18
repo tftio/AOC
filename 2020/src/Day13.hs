@@ -8,7 +8,7 @@ import Data.Sort (sortOn)
 testStr = "939\n7,13,x,x,59,x,31,19"
 
 -- parseInput :: String -> (Int, [Int])
-parseInput s = (start, sortOn snd . map toRange . mapMaybe readMaybe . splitOn "," $ xs)
+parseInput s = (start, sortOn fst . map toRange . mapMaybe readMaybe . splitOn "," $ xs)
   where [x,xs] = lines s
         start = read x :: Int
         toRange p = head $ [(p, i) | i <- [0,p..], i > start]
