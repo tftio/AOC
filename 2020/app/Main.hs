@@ -1,6 +1,8 @@
 module Main where
 
-import Day14
+import Day15
 
 main :: IO ()
-main = solution
+main = do
+  print (solve 2020 puzzleInput)
+  print (solve 30000000 puzzleInput)
