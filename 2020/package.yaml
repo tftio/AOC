@@ -4,7 +4,7 @@ github:              "tftio/AOC2020"
 license:             BSD3
 author:              "James Felix Black"
 maintainer:          "j@tft.io"
-copyright:           "2020 James Felix Black"
+copyright:           "2021 James Felix Black"
 
 extra-source-files:
 - README.md
@@ -21,10 +21,10 @@ description:         Please see the README on GitHub at <https://github.com/tfti
 
 dependencies:
 - base >= 4.7 && < 5
-- containers
 - split
 - regex-tdfa
 - sort
+- containers
 - raw-strings-qq
 - hashmap
 - vector

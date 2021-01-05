@@ -11,7 +11,7 @@ homepage:       https://github.com/tftio/AOC2020#readme
 bug-reports:    https://github.com/tftio/AOC2020/issues
 author:         James Felix Black
 maintainer:     j@tft.io
-copyright:      2020 James Felix Black
+copyright:      2021 James Felix Black
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -44,7 +44,6 @@ library
       Day15
       Day16
       Day17
-      Lib
   other-modules:
       Paths_AOC2020
   hs-source-dirs:
