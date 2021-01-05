@@ -29,8 +29,6 @@ dependencies:
 - hashmap
 - vector
 - text
-- csp
-- attoparsec
 
 library:
   source-dirs: src
