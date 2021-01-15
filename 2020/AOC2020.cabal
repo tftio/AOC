@@ -1,8 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.34.3.
+-- This file has been generated from package.yaml by hpack version 0.33.0.
 --
 -- see: https://github.com/sol/hpack
+--
+-- hash: d181d06fb342930bd8fb6d4260239ecf908eb0a113c1ae3c3340c1d778779de1
 
 name:           AOC2020
 version:        0.1.0.0
@@ -44,6 +46,9 @@ library
       Day15
       Day16
       Day17
+      Day17_part2
+      Day18
+      Day19
   other-modules:
       Paths_AOC2020
   hs-source-dirs:
@@ -53,6 +58,7 @@ library
     , containers
     , hashmap
     , raw-strings-qq
+    , regex-pcre
     , regex-tdfa
     , sort
     , split
@@ -73,6 +79,7 @@ executable AOC2020-exe
     , containers
     , hashmap
     , raw-strings-qq
+    , regex-pcre
     , regex-tdfa
     , sort
     , split
@@ -94,6 +101,7 @@ test-suite AOC2020-test
     , containers
     , hashmap
     , raw-strings-qq
+    , regex-pcre
     , regex-tdfa
     , sort
     , split

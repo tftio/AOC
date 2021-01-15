@@ -29,6 +29,7 @@ dependencies:
 - hashmap
 - vector
 - text
+- regex-pcre
 
 library:
   source-dirs: src

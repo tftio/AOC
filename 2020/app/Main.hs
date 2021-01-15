@@ -3,4 +3,4 @@ module Main where
 import Day17
 
 main :: IO ()
-main = foo
+main = print "hello"
